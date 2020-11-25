@@ -19,7 +19,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void handleRpmSlider(int val);
+    void handleSlider(int val);
     void handlePages();
 
 protected:
