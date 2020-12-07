@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->Oil_temp->setStyleSheet("color:white;");
     ui->gear_num->setStyleSheet("color:white;");
     ui->last->setStyleSheet("color:purple;");
-    connect(ui->horizontalSlider,SIGNAL(sliderMoved(int)),ui->progressBar,SLOT(handleSlider(int)));
+    connect(ui->horizontalSlider,SIGNAL(sliderMoved(int)),this,SLOT(handleSlider(int)));
 
 }
 

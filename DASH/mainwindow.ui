@@ -222,9 +222,9 @@
     <property name="geometry">
      <rect>
       <x>800</x>
-      <y>0</y>
+      <y>10</y>
       <width>201</width>
-      <height>41</height>
+      <height>81</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
