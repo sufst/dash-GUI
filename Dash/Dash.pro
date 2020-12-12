@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     debugwindow.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    stopwatch.cpp
 
 HEADERS += \
     debugwindow.h \
-    mainwindow.h
+    mainwindow.h \
+    stopwatch.h
 
 FORMS += \
     debugwindow.ui \

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>808</width>
-    <height>514</height>
+    <height>513</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,7 +33,7 @@
           <x>0</x>
           <y>100</y>
           <width>231</width>
-          <height>341</height>
+          <height>321</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
@@ -46,7 +46,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Speed:</string>
+            <string>Speed: 0 km/h</string>
            </property>
           </widget>
          </item>
@@ -59,7 +59,7 @@
             </font>
            </property>
            <property name="text">
-            <string>RPM: </string>
+            <string>RPM: 0</string>
            </property>
           </widget>
          </item>
@@ -75,7 +75,7 @@
             <string notr="true"/>
            </property>
            <property name="text">
-            <string>Eng. Temp: </string>
+            <string>Eng. Temp: 0 C</string>
            </property>
           </widget>
          </item>
@@ -85,25 +85,12 @@
         <property name="geometry">
          <rect>
           <x>550</x>
-          <y>100</y>
+          <y>210</y>
           <width>231</width>
-          <height>341</height>
+          <height>211</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
-         <item>
-          <widget class="QLabel" name="lastLabel">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>26</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Last: </string>
-           </property>
-          </widget>
-         </item>
          <item>
           <widget class="QLabel" name="oilTempLabel">
            <property name="font">
@@ -113,7 +100,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Oil Temp:</string>
+            <string>Oil Temp: 0C</string>
            </property>
           </widget>
          </item>
@@ -126,7 +113,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Water Temp: </string>
+            <string>Water Temp: 0C</string>
            </property>
           </widget>
          </item>
@@ -183,7 +170,7 @@ color : rgb(27, 255, 85); }</string>
           <x>230</x>
           <y>100</y>
           <width>321</width>
-          <height>301</height>
+          <height>281</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -200,6 +187,70 @@ color : rgb(27, 255, 85); }</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>100</y>
+          <width>231</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item alignment="Qt::AlignLeft">
+          <widget class="QLabel" name="lastLabel">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>26</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Last: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="lcdNumber">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="smallDecimalPoint">
+            <bool>false</bool>
+           </property>
+           <property name="digitCount">
+            <number>9</number>
+           </property>
+           <property name="value" stdset="0">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="intValue" stdset="0">
+            <number>0</number>
            </property>
           </widget>
          </item>

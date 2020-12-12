@@ -12,6 +12,7 @@ DebugWindow::DebugWindow(QWidget *parent) :
        means we can emmit them to the main window */
     connect(ui->rpmSlider, SIGNAL(sliderMoved(int)), this, SLOT(onSliderMoved(int)));
     connect(ui->radioButton, SIGNAL(pressed()), this, SLOT(onPageButtonPressed()));
+    connect(ui->lapButton, SIGNAL(pressed()), this, SLOT(onLapButtonPressed()));
 }
 
 DebugWindow::~DebugWindow()
@@ -27,4 +28,9 @@ void DebugWindow::onSliderMoved(int val)
 void DebugWindow::onPageButtonPressed()
 {
     emit pageButtonPressed();
+}
+
+void DebugWindow::onLapButtonPressed()
+{
+    emit lapButtonPressed();
 }

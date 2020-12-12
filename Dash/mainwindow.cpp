@@ -11,18 +11,23 @@ MainWindow::MainWindow(QWidget *parent)
     this->setWindowTitle(tr("SUFST - Dash"));
     //ui->centralwidget->setStyleSheet("background: black");      // forces black background, doing this from ui file made designing GUI harder...
 
-    debugWindow = new DebugWindow;                              // create a debug window (main window stores a pointer to this object)
-    debugWindow->show();                                        // show the debug window
+    m_DebugWindow = new DebugWindow;                              // create a debug window (main window stores a pointer to this object)
+    m_DebugWindow->show();                                        // show the debug window
+
+    m_StopWatch = new StopWatch(this, true, ui->lcdNumber);
+    ui->lcdNumber->display("00:00:000");
 
     /* connect signals from debug window to change what the main window shows */
-    connect(debugWindow, SIGNAL(sliderMoved(int)), this, SLOT(handleSlider(int)));
-    connect(debugWindow, SIGNAL(pageButtonPressed()), this, SLOT(handlePages()));
+    connect(m_DebugWindow, SIGNAL(sliderMoved(int)), this, SLOT(handleSlider(int)));
+    connect(m_DebugWindow, SIGNAL(pageButtonPressed()), this, SLOT(handlePages()));
+    connect(m_DebugWindow, SIGNAL(lapButtonPressed()), m_StopWatch, SLOT(onStart()));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete debugWindow;
+    delete m_DebugWindow;
+    delete m_StopWatch;
 }
 
 void MainWindow::handleSlider(int val)
@@ -59,7 +64,7 @@ void MainWindow::handleSlider(int val)
     ui->speedLabel->setText(QStringLiteral("Speed: %1 km/h").arg(val*1.2f));
     ui->rpmLabel->setText(QStringLiteral("RPM: %1").arg(val*220));
     ui->engTempLabel->setText(QStringLiteral("Eng. Temp: %1 C").arg(val));
-    ui->lastLabel->setText(QStringLiteral("Last: 1:23.456"));
+    //ui->lastLabel->setText(QStringLiteral("Last: 1:23.456"));
     ui->oilTempLabel->setText(QStringLiteral("Oil Temp: %1 C").arg((int)(val*0.8)));
     ui->watTempLabel->setText(QStringLiteral("Water Temp: %1 C").arg((int)(val*1.1)));
 }
@@ -75,5 +80,5 @@ void MainWindow::handlePages()      // this slot is run every time the pages but
 void MainWindow::closeEvent(QCloseEvent *event)
 {
     event->accept();
-    debugWindow->close();           // if the main window is closed, also close the debug window
+    m_DebugWindow->close();           // if the main window is closed, also close the debug window
 }

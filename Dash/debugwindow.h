@@ -18,10 +18,12 @@ public:
 signals:
     void sliderMoved(int val);
     void pageButtonPressed();
+    void lapButtonPressed();
 
 private slots:
     void onSliderMoved(int val);
     void onPageButtonPressed();
+    void onLapButtonPressed();
 
 private:
     Ui::DebugWindow *ui;

@@ -5,6 +5,7 @@
 #include <QCloseEvent>
 
 #include "debugwindow.h"
+#include "stopwatch.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -27,7 +28,8 @@ protected:
 
 private:
     Ui::MainWindow *ui;
-    DebugWindow *debugWindow;
+    DebugWindow *m_DebugWindow;
+    StopWatch *m_StopWatch;
 
 };
 #endif // MAINWINDOW_H
