@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>808</width>
-    <height>513</height>
+    <height>430</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color : black</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
@@ -24,7 +24,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="mainPage">
        <widget class="QWidget" name="verticalLayoutWidget">
@@ -33,7 +33,7 @@
           <x>0</x>
           <y>100</y>
           <width>231</width>
-          <height>321</height>
+          <height>301</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
@@ -44,6 +44,9 @@
              <family>Arial</family>
              <pointsize>26</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>Speed: 0 km/h</string>
@@ -57,6 +60,9 @@
              <family>Arial</family>
              <pointsize>26</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>RPM: 0</string>
@@ -72,7 +78,7 @@
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>Eng. Temp: 0 C</string>
@@ -85,9 +91,9 @@
         <property name="geometry">
          <rect>
           <x>550</x>
-          <y>210</y>
+          <y>200</y>
           <width>231</width>
-          <height>211</height>
+          <height>201</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -98,6 +104,10 @@
              <family>Arial</family>
              <pointsize>26</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white
+</string>
            </property>
            <property name="text">
             <string>Oil Temp: 0C</string>
@@ -111,6 +121,10 @@
              <family>Arial</family>
              <pointsize>26</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white
+</string>
            </property>
            <property name="text">
             <string>Water Temp: 0C</string>
@@ -182,6 +196,9 @@ color : rgb(27, 255, 85); }</string>
              <pointsize>150</pointsize>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
+           </property>
            <property name="text">
             <string>8</string>
            </property>
@@ -198,7 +215,7 @@ color : rgb(27, 255, 85); }</string>
           <x>550</x>
           <y>100</y>
           <width>231</width>
-          <height>111</height>
+          <height>101</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -209,6 +226,9 @@ color : rgb(27, 255, 85); }</string>
              <family>Arial</family>
              <pointsize>26</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>Last: </string>
@@ -233,6 +253,9 @@ color : rgb(27, 255, 85); }</string>
            </property>
            <property name="layoutDirection">
             <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="inputMethodHints">
             <set>Qt::ImhNone</set>
@@ -276,6 +299,9 @@ color : rgb(27, 255, 85); }</string>
              <pointsize>20</pointsize>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
+           </property>
            <property name="text">
             <string>Battery V:</string>
            </property>
@@ -288,6 +314,9 @@ color : rgb(27, 255, 85); }</string>
              <family>Arial</family>
              <pointsize>20</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>Oil Temp:</string>
@@ -302,6 +331,9 @@ color : rgb(27, 255, 85); }</string>
              <pointsize>20</pointsize>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
+           </property>
            <property name="text">
             <string>Oil Pres:</string>
            </property>
@@ -314,6 +346,9 @@ color : rgb(27, 255, 85); }</string>
              <family>Arial</family>
              <pointsize>20</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>Water Temp:</string>
@@ -339,6 +374,9 @@ color : rgb(27, 255, 85); }</string>
              <pointsize>20</pointsize>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
+           </property>
            <property name="text">
             <string>Best lap:</string>
            </property>
@@ -350,6 +388,9 @@ color : rgb(27, 255, 85); }</string>
             <font>
              <pointsize>20</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>No of laps:</string>
@@ -363,6 +404,9 @@ color : rgb(27, 255, 85); }</string>
              <pointsize>20</pointsize>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
+           </property>
            <property name="text">
             <string>Distance:</string>
            </property>
@@ -375,63 +419,11 @@ color : rgb(27, 255, 85); }</string>
              <pointsize>20</pointsize>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
+           </property>
            <property name="text">
             <string>Total stint time:</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="verticalLayoutWidget_6">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>250</y>
-          <width>781</width>
-          <height>111</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_6">
-         <item>
-          <widget class="Line" name="line">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_19">
-           <property name="font">
-            <font>
-             <pointsize>16</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Flag 4/6</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_20">
-           <property name="font">
-            <font>
-             <pointsize>16</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Time: </string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_21">
-           <property name="font">
-            <font>
-             <pointsize>16</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Lap: </string>
            </property>
           </widget>
          </item>
@@ -455,6 +447,9 @@ color : rgb(27, 255, 85); }</string>
              <pointsize>20</pointsize>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
+           </property>
            <property name="text">
             <string>Keep Engine Running</string>
            </property>
@@ -470,6 +465,9 @@ color : rgb(27, 255, 85); }</string>
              <family>Arial</family>
              <pointsize>20</pointsize>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : white</string>
            </property>
            <property name="text">
             <string>Endurance Stint: </string>
@@ -490,6 +488,16 @@ color : rgb(27, 255, 85); }</string>
           <height>251</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QLine{color: grey;
+width: 10px}</string>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>2</number>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -503,9 +511,152 @@ color : rgb(27, 255, 85); }</string>
           <height>251</height>
          </rect>
         </property>
+        <property name="midLineWidth">
+         <number>2</number>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>260</y>
+          <width>591</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView{background-color: grey;
+gridline-color: black;}
+QHeaderView{background-color: grey;
+color: black;}</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>100</number>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>117</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderMinimumSectionSize">
+         <number>20</number>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>60</number>
+        </attribute>
+        <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>New Row</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Peak RPM</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Lowest RPM</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Average oil temp.</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Average oil press.</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Avg. water temp.</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="background">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>54</red>
+            <green>54</green>
+            <blue>54</blue>
+           </color>
+          </brush>
+         </property>
+        </item>
        </widget>
       </widget>
      </widget>
@@ -522,7 +673,6 @@ color : rgb(27, 255, 85); }</string>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

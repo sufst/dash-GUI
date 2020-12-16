@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     this->setWindowTitle(tr("SUFST - Dash"));
     //ui->centralwidget->setStyleSheet("background: black");      // forces black background, doing this from ui file made designing GUI harder...
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
     m_DebugWindow = new DebugWindow;                              // create a debug window (main window stores a pointer to this object)
     m_DebugWindow->show();                                        // show the debug window
