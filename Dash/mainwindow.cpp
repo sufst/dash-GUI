@@ -9,15 +9,16 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setWindowTitle(tr("SUFST - Dash"));
-    //ui->centralwidget->setStyleSheet("background: black");      // forces black background, doing this from ui file made designing GUI harder...
-    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
     m_DebugWindow = new DebugWindow;                              // create a debug window (main window stores a pointer to this object)
     m_DebugWindow->show();                                        // show the debug window
 
-    m_StopWatch = new StopWatch(this, true, ui->lcdNumber);
-    ui->lcdNumber->display("00:00:000");
+    /* initialise timers etc... */
+    m_StopWatch = new StopWatch(this, true, ui->lastTime);
+    ui->lastTime->display("00:00:000");
+    ui->totalTime->display("00:00:00");
+    ui->stintTime->display("00:00:00");
+    ui->bestTime->display("00:00:00");
 
     /* connect signals from debug window to change what the main window shows */
     connect(m_DebugWindow, SIGNAL(sliderMoved(int)), this, SLOT(handleSlider(int)));
@@ -27,9 +28,9 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    delete m_StopWatch;
     delete ui;
     delete m_DebugWindow;
-    delete m_StopWatch;
 }
 
 void MainWindow::handleSlider(int val)
